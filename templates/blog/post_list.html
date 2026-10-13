@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<br><br>
+
+<a href="{% url 'post-create' %}">Yangi post yoz gandon</a>
+<br><br><br>
+{% for post in posts %}
+   <a href="{% url 'post-detail' post.slug %}">{{ post.title }}</a><br><br>
+{% empty %}
+   <p>Itti amiyam yuq !</p>
+
+{% endfor %}
+</body>
+</html>

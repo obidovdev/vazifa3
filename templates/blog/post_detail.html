@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>{{ post.title }}</p>
+<p>{{ post.content }}</p>
+
+<a href="{% url 'post-edit' post.slug %}">Postni Tahrirla Gandoncha ???????</a><br>
+
+<a href="{% url 'post-delete' post.slug %}">Postni Uchir Itti Ami ???????</a>
+
+
+
+</body>
+</html>

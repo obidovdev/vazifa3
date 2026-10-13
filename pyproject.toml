@@ -1,0 +1,19 @@
+[project]
+name = "axror"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "sardordev", email = "sardor@dev.uz" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "django>=6.1.2",
+]
+
+[project.scripts]
+axror = "axror:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"

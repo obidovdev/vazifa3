@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Ochirasanmi gandon manashu faylni<strong>{{ post.title }} ?!</strong></p>
+
+
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Uchirgin gandon</button>
+</form>
+
+</body>
+</html>
